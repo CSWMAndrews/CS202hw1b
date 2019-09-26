@@ -119,6 +119,7 @@ void Box::print(std::ostream & output) const
 
 	if (_Filled == true)
 	{
+		cout << "i'm beginning to try and draw a filled box!" << endl;
 		while (yY < _Height)
 		{
 			xX = 0;
@@ -131,9 +132,9 @@ void Box::print(std::ostream & output) const
 			yY++;
 		}
 	}
-
 	else
 	{
+		cout << "i'm beginning to try and draw a hollow box!" << endl;
 		while (xX < _Width)
 		{
 			output << "X";
