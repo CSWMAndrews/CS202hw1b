@@ -15,6 +15,7 @@ using std::ofstream;
 int main() {
 	cout << "Hello, World!" << endl;
 	Box makeABox;
+	makeABox.print();
 
 	Box makeAnotherBox (3, 3, false);
 

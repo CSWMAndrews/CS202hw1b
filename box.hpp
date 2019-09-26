@@ -5,10 +5,10 @@
 
 class Box {
 public:
-	void setWidth(double length); //set the width of the box
+	void setWidth(int Width); //set the width of the box
 	int getWidth() const; //return the width of the box
-	void setHeight(double length); //set the width of the box
-	int getHeight() const; //return the width of the box
+	void setHeight(int Height); //set the Height of the box
+	int getHeight() const; //return the Height of the box
 	void print() const; //print a box
 	Box();  // This is the constructor
 	Box(int, int, bool);  // This is the constructor
