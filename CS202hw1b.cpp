@@ -1,20 +1,93 @@
-// CS202hw1b.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+using std::cin;
+#include <string>
+using std::string;
+using std::getline;
+#include <sstream>
+using std::istringstream;
+#include <fstream>
+using std::ofstream;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+	cout << "Hello, World!" << endl;
+
+	cout << "How wide of a box do you want?" << endl;
+
+	int x;
+	cin >> x;
+	cout << "Width: " << x << endl;
+
+	cout << "How tall of a box do you want?" << endl;
+
+
+	int y;
+	cin >> y;
+	cout << "Height: " << y << endl;
+
+	cout << "Filled (1), or Hollow? (2)" << endl;
+
+	int h;
+	cin >> h;
+
+	if (h < 1, h>2)
+	{
+		cout << "that's not a one or two, exiting" << endl;
+	}
+
+	int xX = 0;
+	int yY = 0;
+
+	if (h < 2)
+	{
+		while (yY < y) {
+			xX = 0;
+			while (xX < x) {
+				cout << "X";
+				xX++;
+			}
+			cout << endl;
+			yY++;
+		}
+	}
+
+	else
+	{
+		while (xX < x)
+		{
+			cout << "X";
+			xX++;
+		}
+		cout << endl;
+		xX = 0;
+		while (yY < y - 2)
+		{
+			xX = 0;
+
+			cout << "X";
+			while (xX < x - 2) {
+				cout << " ";
+				xX++;
+			}
+
+			cout << "X";
+			cout << endl;
+			yY++;
+		}
+		xX = 0;
+		while (xX < x)
+		{
+			cout << "X";
+			xX++;
+		}
+	}
+
+
+
+
+	return 0;
+
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
